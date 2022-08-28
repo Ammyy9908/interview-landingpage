@@ -1,3 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'SF Pro Display Regular';
+  src: url('../public/fonts/SF\ Pro\ Display/Regular.ttf');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Medium';
+  src: url('../public/fonts/SF\ Pro\ Display/Medium.ttf');
+}
+
+
+:root{
+  --heading-1:72px;
+  --regular: 'SF Pro Display Regular', sans-serif;
+  --medium: 'SF Pro Display Medium', sans-serif;
+  --heading-2:64px;
+  --heading-3:48px;
+  --heading-4:36px;
+  --button-text:16px;
+  --background:#000;
+  --body: 14px;
+}
+
+
+
 html,
 body {
   padding: 0;

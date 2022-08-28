@@ -1,0 +1,32 @@
+.about h4{
+    font-family: var(--regular);
+    font-size: var(--heading-4);
+    /* width:350px; */
+  }
+
+  .about p{
+    font-family: var(--regular);
+    font-size: var(--body);
+    /* width:370px; */
+  }
+
+  .about_section_first{
+    width: 100%;
+    /* height: 95vh; */
+  }
+
+  /* .about_hero_content{
+    width:475px;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    top:30%;
+  } */
+
+  @media screen and (min-width:1024px){
+    .about_hero_content{
+      width: 475px;
+      left: 55%;
+      transform: translate(-50%,-50%);
+      top:30%;
+    }
+  }
