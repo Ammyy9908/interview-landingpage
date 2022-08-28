@@ -8,6 +8,7 @@ import {MdPause} from "react-icons/md";
 import React from 'react';
 import Menu from "/components/Menu";
 import Header from '../../components/Header';
+import { connect } from 'react-redux';
 function Projects({menu}) {
 
 
