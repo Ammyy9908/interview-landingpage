@@ -8,7 +8,15 @@ import {MdPause} from "react-icons/md";
 import React from 'react';
 import Footer from "/components/Footer";
 import { connect } from 'react-redux';
-function Home({menu}) {
+function Home({menu,setMenu}) {
+
+
+  
+  React.useEffect(()=>{
+    setMenu(false)
+},[])
+
+
 
 
   const [played,setPlayed] = React.useState(false);
@@ -166,4 +174,8 @@ function Home({menu}) {
 const mapStateToProps = state => ({
   menu:state.appReducer.menu
 })
-export default connect(mapStateToProps,null)(Home);
+
+const mapDispatchToProps = dispatch => ({
+  setMenu: (menu) => dispatch({ type: 'SET_MENU', menu })
+})
+export default connect(mapStateToProps,mapDispatchToProps)(Home);

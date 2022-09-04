@@ -10,7 +10,7 @@ function index({menu}) {
         <Header theme="dark"/>
         <ul className="menu-links mt-32 mb-32 mx-auto flex flex-col  px-16">
             <li className='border-t-2 border-black py-5'><Link href="/about"><a  className='text-3xl lg:text-6xl font-bold'>About</a></Link></li>
-            <li className='border-t-2 border-black py-5'><a href="#" className='text-3xl lg:text-6xl font-bold'>Projects</a></li>
+            <li className='border-t-2 border-black py-5'><Link href="/projects"><a className='text-3xl lg:text-6xl font-bold'>Projects</a></Link></li>
             <li className='border-t-2 border-black py-5'><a href="#" className='text-3xl lg:text-6xl font-bold'>Clients</a></li>
             <li className='border-t-2  border-b-2 border-black py-5'><a href="#" className='text-3xl lg:text-6xl font-bold'>Contact</a></li>
         </ul>

@@ -9,8 +9,10 @@ import React from 'react';
 import Footer from "/components/Footer";
 import { connect } from 'react-redux';
 import Header from '../../components/Header';
-function About({menu}) {
-
+function About({menu,setMenu}) {
+React.useEffect(()=>{
+    setMenu(false)
+},[])
 
 
 
@@ -24,9 +26,9 @@ function About({menu}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     <Header theme="dark"/>
+     <Header theme="dark" position={'sticky'}/>
 
-    <section className={`${styles.about_section_first} sticky top-0 lg:h-[100vh] relative sm:px-16 lg:py-32 lg:mt-12 flex-col flex items-center`}>
+    <section className={`${styles.about_section_first}  lg:h-[100vh] relative sm:px-16 lg:py-32 lg:mt-12 flex-col flex items-center`}>
 
         <img src="/assets/about-1.png" alt="" className='sm:w-full lg:w-auto lg:absolute lg:left-0 lg:top-10'/>
         <div className={`lg:absolute  ${styles.about_hero_content} px-6`}>
@@ -39,49 +41,49 @@ A selection of our clients are Aller Media, Björkholmen Gallery, Bonnier, Break
         <img src="/assets/about-2.png" alt="" className='lg:absolute lg:right-10 lg:-bottom-10'/>
     </section>
 
-    <section className="large_section sticky top-0 text-white bg-black pt-64 pb-32">
+    <section className="large_section  text-white bg-black pt-64 pb-32">
 
         <div className="section_large_image w-full flex items-center justify-center"><img src="/assets/service.png" alt="" /></div>
 
         <div className="service_section flex lg:flex-row flex-col items-start gap-32 mt-12 px-8 lg:px-32 py-32">
             <h3 className='text-2xl'>Services</h3>
             <div className="services grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div className="col">
+                <div className="col py-4 px-8 hover:bg-gray-700 rounded-md">
                     <h3 className='text-5xl mb-2'>Production</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div className='col'>
+                <div className='col py-4 px-8 hover:bg-gray-700 rounded-md'>
                     <h3 className='text-5xl mb-2'>Production</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div className='col'>
+                <div className='col py-4 px-8 hover:bg-gray-700 rounded-md'>
                     <h3 className='text-5xl mb-2'>Production</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div cclassName='col'>
+                <div className='col py-4 px-8 hover:bg-gray-700 rounded-md'>
                     <h3 className='text-5xl mb-2'>Production</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div className='col'>
+                <div className='col py-4 px-8 hover:bg-gray-700 rounded-md'>
                     <h3 className='text-5xl mb-2'>Production</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div className='col'>
+                <div className='col py-4 px-8 hover:bg-gray-700 rounded-md'>
                     <h3 className='text-5xl mb-2'>Production</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div className='col'>
+                <div className='col py-4 px-8 hover:bg-gray-700 rounded-md'>
                     <h3 className='text-5xl mb-2'>Production</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div className='col'>
+                <div className='col py-4 px-8 hover:bg-gray-700 rounded-md'>
                     <h3 className='text-5xl mb-2'>Production</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-                <div className='col'>
+                <div className='col py-4 px-8 hover:bg-gray-700 rounded-md'>
                     <h3 className='text-5xl mb-2'>Production</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div> <div className='col'>
+                </div> <div className='col py-4 px-8 hover:bg-gray-700 rounded-md'>
                     <h3 className='text-5xl mb-2'>Production</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
@@ -100,4 +102,8 @@ A selection of our clients are Aller Media, Björkholmen Gallery, Bonnier, Break
 const mapStateToProps = state => ({
   menu:state.appReducer.menu
 })
-export default connect(mapStateToProps,null)(About);
+
+const mapDispatchToProps = dispatch => ({
+    setMenu: (menu) => dispatch({ type: 'SET_MENU', menu })
+})
+export default connect(mapStateToProps,mapDispatchToProps)(About);
